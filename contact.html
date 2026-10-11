@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Request a Consultation | Dr. Alejandro Badia, Miami/Doral</title>
+<meta name="description" content="Request an in-person or video consultation with Dr. Alejandro Badia at Badia Hand to Shoulder Center, 3650 NW 82nd Ave, Doral, Florida.">
+<link rel="icon" href="img/logo.webp">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="concept">Website concept prepared for <b>Dr. Alejandro Badia</b> by Intellius Medical. Not the live site.</div>
+<header class="hdr">
+  <div class="wrap hdr-in">
+    <a class="logo" href="index.html" aria-label="Badia Hand to Shoulder Center, home"><img src="img/logo.webp" alt="Badia Hand to Shoulder Center" width="73" height="46"></a>
+    <nav class="nav" aria-label="Main"><a href="conditions.html">Conditions</a><a href="thumb.html">Thumb arthritis</a><a href="awake-surgery.html">Awake surgery</a><a href="second-opinion.html">Second opinion</a><a href="international.html">International</a><a href="stories.html">Patient stories</a><a href="about.html">Dr. Badia</a></nav>
+    <div class="hdr-cta"><a class="phone" href="tel:+13052274263">(305) 227-4263</a><a class="btn btn-ink btn-sm" href="contact.html">Request a consultation</a></div>
+    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="drawer">Menu</button>
+  </div>
+  <div class="drawer" id="drawer"><a href="conditions.html">Conditions</a><a href="thumb.html">Thumb arthritis</a><a href="awake-surgery.html">Awake surgery</a><a href="second-opinion.html">Second opinion</a><a href="international.html">International</a><a href="stories.html">Patient stories</a><a href="about.html">Dr. Badia</a><a href="tel:+13052274263">Call (305) 227-4263</a><a class="btn btn-ink" href="contact.html">Request a consultation</a></div>
+</header>
+<main id="main">
+
+<section class="phero" style="padding-bottom:40px">
+  <div class="wrap"><p class="crumbs"><a href="index.html">Home</a> / Request a consultation</p><h1>Request a consultation.</h1><p class="lede">In person in Doral, by video from anywhere, or on one of Dr. Badia&rsquo;s procedure days in New York. A member of the team will contact you to schedule.</p></div>
+</section>
+<section class="section" style="padding-top:40px">
+  <div class="wrap grid-2" style="align-items:start">
+    <form class="form" data-concept id="video">
+      <p class="lbl" style="font-weight:600;color:var(--ink);margin-bottom:8px">How would you like to meet?</p>
+      <div class="seg" role="radiogroup" aria-label="Visit type" style="margin-bottom:20px"><label><input type="radio" name="type" value="person" checked><span>In person</span></label><label><input type="radio" name="type" value="video"><span>Video visit, $250</span></label></div>
+      <div class="row"><label>First name<input name="first" autocomplete="given-name" required></label><label>Last name<input name="last" autocomplete="family-name" required></label></div>
+      <div class="row"><label>Email<input type="email" name="email" autocomplete="email" required></label><label>Phone<input type="tel" name="phone" autocomplete="tel" required></label></div>
+      <div class="row"><label>Country<input name="country" autocomplete="country-name" value="United States" required></label><label>City<input name="city" autocomplete="address-level2"></label></div>
+      <div class="row"><label>Where is the problem?<select name="area" required><option value="">Choose one</option><option>Finger</option><option>Thumb</option><option>Hand</option><option>Wrist</option><option>Elbow</option><option>Shoulder</option><option>Arm</option></select></label><label>Which side?<select name="side"><option value="">Choose one</option><option>Left</option><option>Right</option><option>Both</option></select></label></div>
+      <p class="lbl" style="font-weight:600;color:var(--ink);margin:4px 0 8px">Preferred location</p>
+      <div class="seg" role="radiogroup" aria-label="Preferred location" style="margin-bottom:20px"><label><input type="radio" name="loc" value="miami" checked><span>Miami/Doral</span></label><label><input type="radio" name="loc" value="ny"><span>New York</span></label></div>
+      <label>Tell us what&rsquo;s going on<textarea name="notes" placeholder="What hurts, how long, what you&rsquo;ve tried, and what you&rsquo;ve been told"></textarea></label>
+      <button class="btn btn-ink" type="submit">Request my consultation</button>
+      <p class="note">Concept form: on the live site this goes straight to the Badia Hand to Shoulder team.</p>
+      <p class="done" role="status">Thank you. A member of the team will contact you to schedule. (Concept preview: nothing was sent.)</p>
+    </form>
+    <div>
+      <div class="info stack">
+        <div style="padding-top:0"><b>Badia Hand to Shoulder Center</b><p>3650 NW 82nd Ave, Suite 103<br>Doral, Florida 33166</p><p class="mt-s"><a href="https://maps.google.com/?q=3650+NW+82nd+Ave+Suite+103+Doral+FL+33166" rel="noopener">Get directions</a></p></div>
+        <div><b>Phone</b><p><a href="tel:+13052274263">305 227-HAND (227-4263)</a></p></div>
+        <div><b>Hours</b><p>Monday to Friday, 8:30 am to 5:00 pm<br>Saturday and Sunday, closed</p></div>
+        <div><b>The Surgery Center at Doral</b><p>Same building, Suite 201</p></div>
+        <div><b>New York</b><p>Dr. Badia holds dedicated procedure days in Manhattan for endoscopic carpal tunnel release, Tenex and PRP. Choose New York above and the team will share the next date.</p></div>
+      </div>
+      <div id="map-local" class="map map-sm mt-m" role="region" aria-label="Map of the clinic, partner hotels and Miami International Airport"></div>
+    </div>
+  </div>
+</section>
+
+</main>
+<footer class="ftr">
+  <div class="wrap">
+    <div class="ftr-grid">
+      <div>
+        <p class="big">Complete care of the hand, wrist, elbow and shoulder, in one building in Doral.</p>
+        <p>3650 NW 82nd Ave, Suite 103<br>Doral, Florida 33166</p>
+        <p class="mt-s"><a href="tel:+13052274263">305 227-HAND (227-4263)</a></p>
+        <p class="mt-s">Monday to Friday, 8:30 am to 5:00 pm</p>
+      </div>
+      <div>
+        <h4>Care</h4>
+        <ul><li><a href="conditions.html">Conditions we treat</a></li><li><a href="thumb.html">Thumb arthritis</a></li><li><a href="awake-surgery.html">Awake surgery (WAVR)</a></li><li><a href="second-opinion.html">Second opinions</a></li><li><a href="contact.html#video">Video visits</a></li></ul>
+      </div>
+      <div>
+        <h4>Patients</h4>
+        <ul><li><a href="international.html">International patients</a></li><li><a href="international.html?lang=es">Pacientes en español</a></li><li><a href="international.html#hotels">Partner hotels</a></li><li><a href="stories.html">Patient stories</a></li><li><a href="contact.html">Request a consultation</a></li></ul>
+      </div>
+      <div>
+        <h4>Dr. Badia</h4>
+        <ul><li><a href="about.html">About Dr. Badia</a></li><li><a href="about.html#teaching">Teaching and research</a></li><li><a href="about.html#book">Healthcare from the Trenches</a></li><li><a href="about.html#team">Dr. Joel Peterson</a></li><li><a href="https://www.youtube.com/@drbadia" rel="noopener">YouTube</a></li></ul>
+      </div>
+    </div>
+    <div class="ftr-bottom"><span>Badia Hand to Shoulder Center. Past President ISSPORTH (2011 to 2013).</span><span>Concept design by Intellius Medical. Content drawn from drbadia.com and Dr. Badia&rsquo;s public videos.</span></div>
+  </div>
+</footer>
+<div class="mbar"><a class="btn btn-line" href="tel:+13052274263">Call</a><a class="btn btn-ink" href="contact.html">Request a consultation</a></div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
