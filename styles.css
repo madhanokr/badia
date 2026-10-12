@@ -64,6 +64,7 @@ p{margin:0}
 .w{display:inline-block;overflow:hidden;vertical-align:top;padding-bottom:.08em;margin-bottom:-.08em}
 .wi{display:inline-block;will-change:transform}
 html.motion [data-split] .wi{transform:translateY(105%)}
+html.motion:not(.ready) .hero>.wrap,html.motion:not(.ready) .hero>.wordmark,html.motion:not(.ready) .phero>.wrap{visibility:hidden}
 
 /* Concept bar */
 .concept{position:relative;z-index:70;background:var(--cloud);color:var(--slate);font-size:12.5px;text-align:center;padding:7px var(--gut);line-height:1.4}

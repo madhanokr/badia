@@ -82,6 +82,7 @@
       var ring=$('.ring',hero); if(ring) tl.from(ring,{scale:.7,opacity:0,duration:1.6,ease:'expo.out'},.15);
       tl.from($$('.glass',hero),{y:24,opacity:0,scale:.92,duration:.9,stagger:.12,ease:'back.out(1.6)'},.9);
       var pm=$('.phero .media',hero); if(pm) tl.from(pm,{clipPath:'inset(12% 10% 12% 10% round 36px)',scale:1.04,duration:1.5,ease:'expo.out'},.2);
+      tl.call(function(){},null,0); html.classList.add('ready');
       var wm=$('.wordmark',hero); if(wm){ tl.from(wm,{y:60,opacity:0,duration:1.6,ease:'expo.out'},.1);
         G.to(wm,{yPercent:18,ease:'none',scrollTrigger:{trigger:hero,start:'top top',end:'bottom top',scrub:true}}); }
       if(cut) G.to(cut,{yPercent:8,ease:'none',scrollTrigger:{trigger:hero,start:'top top',end:'bottom top',scrub:true}});
