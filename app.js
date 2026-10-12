@@ -3,7 +3,7 @@
   var reduce=w.matchMedia('(prefers-reduced-motion: reduce)').matches;
   var G=w.gsap, ST=w.ScrollTrigger;
   var motion=!reduce && !!G && !!ST;
-  if(motion){ html.classList.add('motion'); G.registerPlugin(ST); }
+  if(motion){ html.classList.add('motion'); G.registerPlugin(ST); } else { html.classList.remove('motion'); }
   var desktop=w.matchMedia('(min-width: 1024px)');
   function $(s,c){return (c||d).querySelector(s);} function $$(s,c){return [].slice.call((c||d).querySelectorAll(s));}
 
